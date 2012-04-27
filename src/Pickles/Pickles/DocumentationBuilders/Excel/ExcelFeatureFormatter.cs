@@ -48,6 +48,7 @@ namespace Pickles.DocumentationBuilders.Excel
 
         public void Format(IXLWorksheet worksheet, Feature feature)
         {
+            worksheet.Cell("A1").Style.Font.SetBold();
             worksheet.Cell("A1").Value = feature.Name;
             worksheet.Cell("B2").Value = feature.Description;
             worksheet.Cell("B2").Style.Alignment.WrapText = false;

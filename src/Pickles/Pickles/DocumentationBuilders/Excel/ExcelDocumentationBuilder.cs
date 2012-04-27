@@ -76,7 +76,7 @@ namespace Pickles.DocumentationBuilders.Excel
 
                 features.AcceptVisitor(actionVisitor);
 
-                this.excelTableOfContentsFormatter.Format(workbook);
+                this.excelTableOfContentsFormatter.Format(workbook, features);
 
                 workbook.SaveAs(spreadsheetPath);
             }

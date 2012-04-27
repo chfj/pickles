@@ -20,7 +20,7 @@ namespace Pickles.Test.DocumentationBuilders
             var excelTableFormatter = Kernel.Get<ExcelTableFormatter>();
             var table = new Table();
             table.HeaderRow = new TableRow("Var1", "Var2", "Var3", "Var4");
-            table.DataRows = new List<TableRow>(new TableRow[] { new TableRow("1", "2", "3", "4"), new TableRow("5", "6", "7", "8") });
+            table.DataRows = new List<TableRow>(new[] { new TableRow("1", "2", "3", "4"), new TableRow("5", "6", "7", "8") });
 
             using (var workbook = new XLWorkbook())
             {
